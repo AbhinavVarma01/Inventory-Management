@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>STORE KEEPER</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 2px solid #cc0000;
+            position: relative;
+        }
+        .logo-column {
+            position: absolute;
+            left: 20px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .text-column {
+            text-align: center;
+        }
+        .text-column h1 {
+            margin: 0;
+            color: #cc0000;
+        }
+        .text-column p {
+            margin: 5px 0;
+            color: #333;
+        }
+        .navbar {
+            background-color: maroon;
+            color: white;
+            margin-left: 200px;
+        }
+        .navbar a {
+            color: white;
+        }
+        .navbar a:hover {
+            color: lightgray;
+        }
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 120px;
+            margin-top: 25px;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+            z-index: 1000;
+            overflow-x: hidden;
+        }
+        .sidenav a {
+            padding: 16px 8px 16px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            background-color: #575757;
+            border-radius: 40px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px 30px;
+            color: #ffffff;
+            background-color: #870E03;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            flex-wrap: wrap;
+            z-index: 2000; /* Higher z-index than sidenav */
+        }
+        .footer__section {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .footer_addr, .footer_section h2, .footer address {
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .footer li {
+            line-height: 30px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo-column">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="text-column">
+            <h1 class="text-4xl font-semibold main-heading">Keshav Memorial College Of Engineering</h1>
+            <p class="text-lg font-medium sub-heading mt-2">A unit of Keshav Memorial Technical Educational Society (KMTES)</p>
+            <p class="text-sm highlight mt-1">Approved by AICTE, New Delhi - Affiliated to Jawaharlal Nehru Technological University, Hyderabad</p>
+        </div>
+    </div>
+    <header class="text-gray-600 body-font navbar">
+        <div class="container mx-auto relative flex flex-wrap p-5 flex-col md:flex-row items-start">
+            <nav class="flex flex-wrap items-start text-base justify-start">
+                <a class="mr-5 hover:text-lightgray" href="#">HOME</a>
+                <a class="mr-5 hover:text-lightgray" href="about.html">ABOUT US</a>
+                <div class="dropdown">
+                    <a class="mr-5 hover:text-lightgray" href="hello_form[1].html">LOGIN</a>
+                </div>
+            </nav>
+        </div>
+        <div class="sidenav">
+            <a href="#">CHECK IV</a>
+            <a href="#">CHECK RV</a>
+            <a href="#">Records</a>
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="footer_section footer_addr">
+            <h2>Contact</h2>
+            <address>Office : 8499981497</address>
+        </div>
+        <div class="footer__section">
+            <h2 class="nav__title">Email id:</h2>
+            <ul class="nav__ul">
+                <li><a href="mailto:admin@kmce.in">admin@kmce.in</a></li>
+            </ul>
+        </div>
+        <div class="footer__section">
+            <h2 class="nav__title">Landline:</h2>
+            <ul class="nav__ul">
+                <li><a href="tel:040-xxxx-123">040-xxxx-123</a></li>
+            </ul>
+        </div>
+        <div class="footer__section">
+            <h2 class="nav__title">Address:</h2>
+            <ul class="nav__ul">
+                <li><a href="#">Koheda Road, Ibrahimpatnam</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
